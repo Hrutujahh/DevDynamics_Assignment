@@ -1,0 +1,205 @@
+{
+  "info": {
+    "_postman_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "name": "PubSub System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Subscribe User1 to Topic1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"topicId\": \"topic1\",\n  \"subscriberId\": \"user1\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/subscribe",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "subscribe"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Subscribe User2 to Topic1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"topicId\": \"topic1\",\n  \"subscriberId\": \"user2\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/subscribe",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "subscribe"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Subscribe User3 to Topic2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"topicId\": \"topic2\",\n  \"subscriberId\": \"user3\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/subscribe",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "subscribe"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notify Topic1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"topicId\": \"topic1\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/notify",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "notify"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Unsubscribe User1 from Topic1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"topicId\": \"topic1\",\n  \"subscriberId\": \"user1\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/unsubscribe",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "unsubscribe"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Notify Topic1 After Unsubscribing User1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"topicId\": \"topic1\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/notify",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "notify"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Unsubscribe User3 from Topic1",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"topicId\": \"topic1\",\n  \"subscriberId\": \"user3\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/unsubscribe",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "unsubscribe"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
