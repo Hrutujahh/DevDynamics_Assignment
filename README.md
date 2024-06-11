@@ -37,6 +37,19 @@ API Endpoints:
    }
    Response : 'Subscriber user1 unsubscribed from topic topic1.'
 
+Edge Cases for API Testing:
+1)A user tries to subscribe to a topic they are already subscribed to.
+2)A user tries to unsubscribe from a topic they are not subscribed to.
+3)Attempting to notify subscribers of a topic that has no subscribers.
+4)The system receives requests with invalid or non-existent topic or subscriber IDs.
+5)Different cases in topic or subscriber IDs (e.g., "Topic1" vs "topic1").
+6)Multiple concurrent requests to subscribe or unsubscribe users to/from the same topic.
+7)Attempt to unsubscribe a user after the topic has been deleted.
+8)Attempt to notify subscribers of a non-existent topic.
+9)A topic has an extremely large number of subscribers.
+10)Requests with empty bodies or missing required fields.
+
+
 Run the server : node server.js
 Server will start on 3000 port.
 
